@@ -7,7 +7,37 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>Hola</h1>
+    <header>
+        <h1>The Odin Project JavaScript Library</h1>
+    </header>
+    <main>
+        <button id="add-new" type="button">+ Add New Book</button>
+        <form class="disabled">
+            <div>
+                <label for="author">Author</label>
+                <input type="text" id="author" required>
+            </div>
+            <div>
+                <label for="title">Title</label>
+                <input type="text" id="title" required>
+            </div>
+            <div>
+                <label for="pages">Number Pages</label>
+                <input type="number" id="pages">
+            </div>
+            <div>
+                <label for="readed">Have you already read this book?</label>
+                <input type="checkbox" id="readed" name="readed" value="true">
+            </div>
+            <button type="submit" id="submit-new-book-button">Submit</button>
+        </form>
+        <section class="table-of-books-container">
+            
+        </section>
+    </main>
+    <footer>
+        Made with love by <a href="https://github.com/leodev9911" target="_blank">@leodev9911</a>
+    </footer>
     <script src="./index.js"></script>
 </body>
 </html>
